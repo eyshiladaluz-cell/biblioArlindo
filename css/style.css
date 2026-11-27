@@ -1,0 +1,271 @@
+/* =====================================
+   BIBLIOARLINDO - VISUAL COLORIDO
+===================================== */
+
+:root {
+    --azul: #2563eb;
+    --roxo: #9333ea;
+    --rosa: #ec4899;
+    --amarelo: #f59e0b;
+    --verde: #10b981;
+    --turquesa: #06b6d4;
+  
+    --fundo: #f3f0ff;
+    --texto: #26334a;
+    --branco: #ffffff;
+    --borda: #e5e7eb;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--texto);
+    background:
+      linear-gradient(135deg, #eff6ff, #fdf2f8, #f5f3ff);
+    line-height: 1.6;
+  }
+  
+  /* CABEÇALHO COLORIDO */
+  
+  header {
+    background: linear-gradient(
+      120deg,
+      #2563eb,
+      #7c3aed,
+      #db2777
+    );
+    color: white;
+    padding: 38px 6%;
+    border-radius: 0 0 28px 28px;
+    box-shadow: 0 8px 25px #6d28d933;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0 0 8px;
+  }
+  
+  header p {
+    color: #f5eaff;
+    margin-bottom: 20px;
+  }
+  
+  header a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background: #ffffff25;
+    border: 1px solid #ffffff80;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  
+  header a:hover {
+    background: white;
+    color: #6d28d9;
+  }
+  
+  /* CONTEÚDO */
+  
+  main {
+    width: min(1100px, 92%);
+    margin: 35px auto;
+  }
+  
+  section {
+    background: white;
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 7px 22px #64748b18;
+  }
+  
+  section h2 {
+    color: #6d28d9;
+    margin-top: 0;
+  }
+  
+  /* CAMPOS */
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 7px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd6fe;
+    border-radius: 12px;
+    font: inherit;
+    outline: none;
+    background: #fafaff;
+    transition: 0.2s;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--roxo);
+    box-shadow: 0 0 0 4px #9333ea20;
+  }
+  
+  /* BOTÕES */
+  
+  button,
+  .botao {
+    padding: 12px 21px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #2563eb, #9333ea);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px 0 0;
+    transition: 0.25s;
+  }
+  
+  button:hover,
+  .botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px #9333ea40;
+  }
+  
+  button.secundario {
+    background: linear-gradient(120deg, #06b6d4, #2563eb);
+  }
+  
+  button.perigo {
+    background: linear-gradient(120deg, #ef4444, #db2777);
+  }
+  
+  /* CARTÕES DE LIVROS */
+  
+  .livros {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(230px, 1fr)
+    );
+    gap: 20px;
+  }
+  
+  .cartao {
+    background: white;
+    border: 1px solid #e9d5ff;
+    border-top: 6px solid #9333ea;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 0;
+    box-shadow: 0 6px 18px #64748b18;
+    transition: 0.25s;
+  }
+  
+  .cartao:nth-child(4n + 1) {
+    border-top-color: #2563eb;
+  }
+  
+  .cartao:nth-child(4n + 2) {
+    border-top-color: #ec4899;
+  }
+  
+  .cartao:nth-child(4n + 3) {
+    border-top-color: #f59e0b;
+  }
+  
+  .cartao:nth-child(4n + 4) {
+    border-top-color: #10b981;
+  }
+  
+  .cartao:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px #64748b30;
+  }
+  
+  .cartao h3 {
+    color: #6d28d9;
+    font-size: 19px;
+    margin-top: 0;
+  }
+  
+  .cartao p {
+    color: #526174;
+    font-size: 14px;
+  }
+  
+  /* MENSAGENS */
+  
+  .mensagem {
+    background: #ecfeff;
+    color: #155e75;
+    border-left: 5px solid #06b6d4;
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 15px;
+  }
+  
+  /* TABELAS */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  th,
+  td {
+    padding: 13px;
+    border-bottom: 1px solid var(--borda);
+    text-align: left;
+  }
+  
+  th {
+    background: #ede9fe;
+    color: #6d28d9;
+  }
+  
+  /* ELEMENTOS OCULTOS */
+  
+  .oculto {
+    display: none;
+  }
+  
+  /* CELULARES */
+  
+  @media (max-width: 600px) {
+    header {
+      padding: 28px 5%;
+    }
+  
+    header h1 {
+      font-size: 28px;
+    }
+  
+    main {
+      width: 94%;
+      margin: 20px auto;
+    }
+  
+    section {
+      padding: 17px;
+    }
+  
+    .livros {
+      grid-template-columns: 1fr;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  }

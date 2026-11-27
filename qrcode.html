@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Code - biblioArlindo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>QR Code do catálogo público</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Acesse nossa biblioteca!</h2>
+
+      <p>
+        Cole abaixo o endereço público do catálogo para gerar
+        o QR Code da biblioteca.
+      </p>
+
+      <label for="endereco">Endereço público do catálogo</label>
+      <input
+        id="endereco"
+        type="url"
+        placeholder="https://seu-site.vercel.app"
+        required
+      >
+
+      <button id="gerar" type="button">Gerar QR Code</button>
+
+      <div id="codigo" style="margin: 20px 0;"></div>
+
+      <button id="baixar" class="secundario" type="button">
+        Baixar imagem PNG
+      </button>
+
+      <p>
+        <a href="index.html">Voltar ao catálogo</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/qrcode.js"></script>
+</body>
+</html>
